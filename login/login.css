@@ -1,0 +1,77 @@
+/* COMMON */
+input {
+  writing-mode: horizontal-tb !important;
+  text-transform: none;
+  display: inline-block;
+  text-align: start;
+
+}
+
+/* MAIN */
+.member-card-layout {
+  position: relative;
+  min-width: 320px;
+  min-height: 100%;
+  padding: 120px 0 170px;
+  background-color: #999;
+}
+.member-card-layout .container{
+  position: relative;
+  margin: 0 auto;
+  width: 450px;
+  min-height: 682px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+}
+.member-card-layout .container .inner {
+  margin: 0 40px;
+  padding-bottom: 40px;
+}
+.member-card-layout .container .inner .logo{
+  display: flex;
+  padding-top: 48px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 42px;
+}
+.member-card-layout .container .inner .logo>img{
+  width: 128px;
+  height: 32px;
+}
+.member-card-layout .container .inner .login {}
+.member-card-layout .container .inner .login .member-input {
+
+}
+.member-card-layout .container .inner .login .member-input .member-input__state {
+  margin-top: 27px;
+  position: relative;
+  padding: 10px 0 11px;
+  border-bottom: 1px solid #dddfe4;
+}
+.member-card-layout .container .inner .login .member-input__state .member-input__box {
+  position: relative;
+  z-index: 10;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  outline: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  width: 100%;
+}
+.member-card-layout .container .inner .login .member-button {
+  font-size: 16px;
+  border-radius: 3px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #1ea1f7!important;
+  color: #fff;
+  border: 0;
+  height: 56px;
+  cursor: pointer;
+}
+.login__btn {
+  margin-top: 40px;
+  width: 100%;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>op.gg</title>
+  <link rel="icon" href="./opgg_favicon.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- 스타일 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+</head>
+<body>
+  <!-- 위쪽에 툴바 만들기용 -->
+  <header>
+    <div class="sub-menu">
+      <a href="/" class="logo">
+        <img src="https://s-lol-web.op.gg/images/icon/opgglogo.svg?v=1674129686958" width="65" alt="OP.GG" height="16" />
+      </a>
+      <ul>
+        <li>
+          <span>
+            <img src="https://opgg-gnb.akamaized.net/static/images/icons/img-navi-lol-white.svg?image=q_auto,f_webp,w_48&amp;v=1674129686958" width="24" alt="리그오브레전드" height="24" />
+            <span>리그오브레전드</span>
+          </span>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <img src="https://opgg-gnb.akamaized.net/static/images/icons/01-icon-00-logo-icon-opggsquare.svg?image=q_auto,f_webp,w_48&amp;v=1674129686958" width="24" alt="데스크톱" height="24" />
+            <span>데스크톱</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"><img src="https://opgg-gnb.akamaized.net/static/images/icons/img-navi-valorant-white.svg?image=q_auto,f_webp,w_48&amp;v=1674129686958" width="24" alt="발로란트" height="24">
+            <span class="valorantLogo">B</span>
+            <span>발로란트</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"><img src="https://opgg-gnb.akamaized.net/static/images/icons/img-navi-pubg-gray.svg?image=q_auto,f_webp,w_48&amp;v=1674527316602" width="24" alt="배틀그라운드" height="24">
+            <span>배틀그라운드</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"><img src="https://opgg-gnb.akamaized.net/static/images/icons/img-navi-overwatch-gray.svg?image=q_auto,f_webp,w_48&amp;v=1674527316602" width="24" alt="오버워치" height="24">
+            <span>오버워치</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"><img src="https://opgg-gnb.akamaized.net/static/images/icons/img_navi_bs.svg?image=q_auto,f_webp,w_48&amp;v=1674527316602" width="24" alt="이터널 리턴" height="24">
+            <span>이터널 리턴</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)"><img src="https://opgg-gnb.akamaized.net/static/images/icons/img_navi_esports.svg?image=q_auto,f_webp,w_48&amp;v=1674527316602" width="24" alt="이스포츠" height="24">
+            <span>이스포츠</span>
+          </a>
+        </li>
+      </ul>
+      <div class="login">
+        <a href="./login/login.html" class="login-button">로그인</a>
+      </div>
+    </div>
+    <div class="main-menu">
+      <nav class="route-nav">
+        <ul class="route-list">
+          <li class="route-item">
+            <a href="javascript:void(0)">홈</a>
+          </li>
+          <li class="route-item">
+            <a href="javascript:void(0)">챔피언 분석</a>
+          </li>
+          <li class="route-item">
+            <a href="javascript:void(0)">게임 모드</a>
+          </li>
+          <li class="route-item">
+            <a href="javascript:void(0)">통계</a>
+          </li>
+          <li class="route-item">
+            <a href="javascript:void(0)">랭킹</a>
+          </li>
+          <li class="route-item">
+            <a href="javascript:void(0)">프로관전</a>
+          </li>
+          <li class="route-item">
+            <a href="javascript:void(0)">멀티서치</a>
+          </li>
+          <li class="route-item">
+            <a href="javascript:void(0)">커뮤니티</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- NOTICE -->
+  <div class="notification-header">
+    <div class="notice">
+      <a href="https://riot.com/2023_LNY" target="_blank" rel="noopener noreferrer">지금 LoL 모바일 상점에서 RP 충전하고 설맞이 특별 선물을 받아가세요!</a>
+    </div>
+  </div>
+  <div class="main">
+    <div class="main-logo">
+      <img src="https://opgg-static.akamaized.net/logo/20230117091524.8446338a5c964049950cf835fc5e95bb.png?image=q_auto,f_webp,w_auto&amp;v=1674621330731" alt="OP.GG logo (케넨)" title="케넨">
+    </div>
+    <div class="search-container">
+      <div>
+        <form class="search-box">
+          <div>
+            <small class="label">Region</small>
+            <div class="country">
+              <label class="hidden" for="kr">kr</label>
+              <select id="kr"></select>
+            </div>
+          </div>
+          <div class="search-name">
+            <label for="searchHome" class="label">Search</label>
+            <input type="text" id="searchHome" class="search-name-box" name="search" autocomplete="off" placeholder="소환사명, 소환사명, ..." value="" />
+          </div>
+          <button type="submit">.GG</button>
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
